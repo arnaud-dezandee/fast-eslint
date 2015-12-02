@@ -1,0 +1,38 @@
+{
+  "name": "fast-eslint",
+  "version": "0.0.0",
+  "description": "Fast ESLint plugin",
+  "repository": "git+https://github.com/Adezandee/fast-eslint.git",
+  "homepage": "https://github.com/Adezandee/fast-eslint#readme",
+  "author": "Arnaud Dezandee <dezandee.arnaud@gmail.com> (https://github.com/Adezandee)",
+  "license": "MIT",
+  "activationCommands": [],
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "dependencies": {
+    "atom-linter": "^3.4.0",
+    "atom-package-deps": "^3.0.5",
+    "eslint": "^1.10.3",
+    "loophole": "^1.1.0"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.5",
+    "eslint-config-airbnb": "^1.0.2"
+  }
+}
