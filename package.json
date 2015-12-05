@@ -1,6 +1,6 @@
 {
   "name": "fast-eslint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fast ESLint plugin",
   "repository": "git+https://github.com/Adezandee/fast-eslint.git",
   "homepage": "https://github.com/Adezandee/fast-eslint#readme",
