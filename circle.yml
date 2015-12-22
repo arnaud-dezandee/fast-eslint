@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - wget -O atom-amd64.deb https://atom.io/download/deb
+    - wget https://github.com/atom/atom/releases/download/v1.3.2/atom-amd64.deb
     - sudo dpkg --install atom-amd64.deb || true
     - sudo apt-get -f install
     - apm install
