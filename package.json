@@ -1,7 +1,7 @@
 {
   "name": "fast-eslint",
   "version": "1.1.2",
-  "description": "Fast ESLint plugin",
+  "description": "Lightweight zeroconf ESLint plugin for Atom.",
   "repository": "git+https://github.com/Adezandee/fast-eslint.git",
   "homepage": "https://github.com/Adezandee/fast-eslint#readme",
   "author": "Arnaud Dezandee <dezandee.arnaud@gmail.com> (https://github.com/Adezandee)",
