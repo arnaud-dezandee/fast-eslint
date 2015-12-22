@@ -11,9 +11,9 @@ describe('Fast-ESLint provider for Linter', () => {
     });
   });
 
-  it('finds something wrong with bad.js', () => {
+  it('finds something wrong with airbnb/bad.js', () => {
     waitsForPromise(() => {
-      return atom.workspace.open(__dirname + '/files/bad.js').then(editor => {
+      return atom.workspace.open(__dirname + '/fixtures/airbnb/bad.js').then(editor => {
         return lint(editor).then(messages => {
           expect(messages.length).toEqual(5);
 
@@ -45,6 +45,22 @@ describe('Fast-ESLint provider for Linter', () => {
           expect(messages[4].range).toEqual([[4, 1], [4, 1]]);
           expect(messages[4].html).toEqual(
             `<span class="badge badge-flexible">semi</span> Missing semicolon.`
+          );
+        });
+      });
+    });
+  });
+
+  it('finds something wrong with config/bad.js', () => {
+    waitsForPromise(() => {
+      return atom.workspace.open(__dirname + '/fixtures/config/bad.js').then(editor => {
+        return lint(editor).then(messages => {
+          expect(messages.length).toEqual(1);
+
+          expect(messages[0].type).toEqual('Error');
+          expect(messages[0].range).toEqual([[0, 12], [0, 13]]);
+          expect(messages[0].html).toEqual(
+            `<span class="badge badge-flexible">semi</span> Extra semicolon.`
           );
         });
       });
