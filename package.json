@@ -1,8 +1,11 @@
 {
   "name": "fast-eslint",
-  "version": "1.1.3",
+  "version": "0.0.0-semantic-release",
   "description": "Lightweight zeroconf ESLint plugin for Atom.",
-  "repository": "git+https://github.com/Adezandee/fast-eslint.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adezandee/fast-eslint.git"
+  },
   "homepage": "https://github.com/Adezandee/fast-eslint#readme",
   "author": "Arnaud Dezandee <dezandee.arnaud@gmail.com> (https://github.com/Adezandee)",
   "license": "MIT",
@@ -13,7 +16,8 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "apm test"
+    "test": "apm test",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "atom-linter": "^4.1.1",
@@ -34,6 +38,17 @@
   },
   "devDependencies": {
     "babel-eslint": "^4.1.5",
-    "eslint-config-airbnb": "^2.1.1"
+    "condition-circle": "^1.2.0",
+    "cz-conventional-changelog": "^1.1.5",
+    "eslint-config-airbnb": "^2.1.1",
+    "semantic-release": "^4.3.5"
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
