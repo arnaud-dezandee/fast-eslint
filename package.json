@@ -15,9 +15,10 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint .",
+    "pretest": "eslint .",
     "test": "apm test",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "apm:publish": "apm publish -t $npm_package_version",
+    "semantic-release": "semantic-release pre && npm run apm:publish && semantic-release post"
   },
   "dependencies": {
     "atom-linter": "^4.1.1",
@@ -25,6 +26,14 @@
     "eslint": "^1.10.3",
     "lodash.uniq": "^3.2.2",
     "loophole": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "condition-circle": "^1.2.0",
+    "cz-conventional-changelog": "^1.1.5",
+    "eslint-config-airbnb": "^3.1.0",
+    "last-release-apm": "^1.0.0",
+    "semantic-release": "^4.3.5"
   },
   "package-deps": [
     "linter"
@@ -36,15 +45,9 @@
       }
     }
   },
-  "devDependencies": {
-    "babel-eslint": "^4.1.5",
-    "condition-circle": "^1.2.0",
-    "cz-conventional-changelog": "^1.1.5",
-    "eslint-config-airbnb": "^2.1.1",
-    "semantic-release": "^4.3.5"
-  },
   "release": {
-    "verifyConditions": "condition-circle"
+    "verifyConditions": "condition-circle",
+    "getLastRelease": "last-release-apm"
   },
   "config": {
     "commitizen": {

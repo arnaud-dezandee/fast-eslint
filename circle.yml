@@ -5,7 +5,5 @@ dependencies:
     - sudo apt-get -f install
     - apm install
 test:
-  override:
-    - apm test
   post:
     - npm run semantic-release || true
