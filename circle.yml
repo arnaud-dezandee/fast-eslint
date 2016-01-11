@@ -1,5 +1,6 @@
 machine:
   pre:
+    - git config --global push.default simple
     - git config --global user.name "CircleCI"
     - git config --global user.email "dezandee.arnaud@gmail.com"
 
