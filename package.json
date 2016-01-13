@@ -26,7 +26,7 @@
     "atom-linter": "^4.3.2",
     "atom-package-deps": "^3.0.6",
     "eslint": "^1.10.3",
-    "lodash.uniq": "^3.2.2",
+    "lodash.uniq": "^4.0.0",
     "loophole": "^1.1.0"
   },
   "devDependencies": {
