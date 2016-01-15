@@ -17,8 +17,8 @@
   "scripts": {
     "pretest": "eslint .",
     "test": "apm test",
-    "git:push": "git commit -am \"Prepare v$npm_package_version release [ci skip]\"",
-    "postgit:push": "git push",
+    "pregit:push": "git commit -am \"Prepare $npm_package_version release\"",
+    "git:push": "git push",
     "apm:publish": "apm publish -t v$npm_package_version",
     "semantic-release": "semantic-release pre && npm run git:push && semantic-release post && npm run apm:publish"
   },
@@ -26,7 +26,7 @@
     "atom-linter": "^4.3.2",
     "atom-package-deps": "^3.0.6",
     "eslint": "^1.10.3",
-    "lodash.uniq": "^3.2.2",
+    "lodash.uniq": "^4.0.1",
     "loophole": "^1.1.0"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "condition-circle": "^1.2.0",
     "cz-conventional-changelog": "^1.1.5",
     "eslint-config-airbnb": "^3.1.0",
-    "last-release-apm": "^1.0.0",
+    "last-release-apm": "^1.1.2",
     "semantic-release": "^4.3.5"
   },
   "package-deps": [
