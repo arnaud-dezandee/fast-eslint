@@ -6,11 +6,13 @@ machine:
 
 dependencies:
   override:
-    - wget https://github.com/atom/atom/releases/download/v1.3.3/atom-amd64.deb
+    - wget -O atom-amd64.deb https://atom.io/download/deb
     - sudo dpkg --install atom-amd64.deb || true
     - sudo apt-get -f install
     - apm install
 
 test:
+  override:
+    - npm test
   post:
     - npm run semantic-release || true
