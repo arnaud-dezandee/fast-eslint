@@ -33,7 +33,7 @@
     "babel-eslint": "^5.0.0-beta6",
     "condition-circle": "^1.2.0",
     "cz-conventional-changelog": "^1.1.5",
-    "eslint-config-airbnb": "^4.0.0",
+    "eslint-config-airbnb": "^5.0.1",
     "last-release-apm": "^1.1.2",
     "semantic-release": "^4.3.5"
   },
