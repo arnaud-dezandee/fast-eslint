@@ -1,47 +1,78 @@
 'use babel';
 
+/**
+ * Dependencies
+ */
+
+import path from 'path';
+process.chdir('/');
+
+/**
+ * Tests
+ */
+
 describe('Fast-ESLint provider for Linter', () => {
   const lint = require('../lib/index.js').provideLinter().lint;
+
+  const openFile = (fileName, cb) => (
+    waitsForPromise(() => (
+      atom.workspace
+        .open(path.join(__dirname, fileName))
+        .then(editor => lint(editor).then(cb))
+    ))
+  );
 
   beforeEach(() => {
     waitsForPromise(() => atom.packages.activatePackage('fast-eslint'));
   });
 
-  it('finds something wrong with airbnb/bad.js', () => {
-    waitsForPromise(() => atom.workspace.open(`${__dirname}/fixtures/airbnb/bad.js`).then(editor => {
-      lint(editor).then(messages => {
-        expect(messages.length).toEqual(5);
-        expect(messages[0].type).toEqual('Error');
-        expect(messages[0].range).toEqual([[0, 0], [0, 18]]);
-        expect(messages[0].html).toEqual(`<span class="badge badge-flexible">no-var</span> Unexpected var, use let or const instead.`);
-
-        expect(messages[1].type).toEqual('Error');
-        expect(messages[1].range).toEqual([[0, 4], [0, 18]]);
-        expect(messages[1].html).toEqual(`<span class="badge badge-flexible">no-unused-vars</span> "test" is defined but never used`);
-
-        expect(messages[2].type).toEqual('Error');
-        expect(messages[2].range).toEqual([[2, 0], [2, 22]]);
-        expect(messages[2].html).toEqual(`<span class="badge badge-flexible">no-undef</span> "myFunc" is not defined.`);
-
-        expect(messages[3].type).toEqual('Warning');
-        expect(messages[3].range).toEqual([[2, 9], [2, 22]]);
-        expect(messages[3].html).toEqual(`<span class="badge badge-flexible">func-names</span> Missing function expression name.`);
-
-        expect(messages[4].type).toEqual('Error');
-        expect(messages[4].range).toEqual([[4, 1], [4, 1]]);
-        expect(messages[4].html).toEqual(`<span class="badge badge-flexible">semi</span> Missing semicolon.`);
+  it('finds something wrong with google/bad.js', () => {
+    openFile('fixtures/google/bad.js', (messages) => {
+      expect(messages.length).toEqual(5);
+      [
+        { range: [[3,0],[3,25]], type: 'Error' },
+        { range: [[3,0],[3,25]], type: 'Error' },
+        { range: [[3,7],[3,25]], type: 'Error' },
+        { range: [[3,25],[3,25]], type: 'Error' },
+        { range: [[5,0],[5,19]], type: 'Warning' }
+      ].forEach((expected, index) => {
+        expect(messages[index].type).toEqual(expected.type);
+        expect(messages[index].range).toEqual(expected.range);
       });
-    }));
+    });
   });
 
-  it('finds something wrong with config/bad.js', () => {
-    waitsForPromise(() => atom.workspace.open(`${__dirname}/fixtures/config/bad.js`).then(editor => {
-      lint(editor).then(messages => {
-        expect(messages.length).toEqual(1);
-        expect(messages[0].type).toEqual('Error');
-        expect(messages[0].range).toEqual([[0, 12], [0, 13]]);
-        expect(messages[0].html).toEqual(`<span class="badge badge-flexible">semi</span> Extra semicolon.`);
+  it('finds something wrong with standard/bad.js', () => {
+    openFile('fixtures/standard/bad.js', (messages) => {
+      expect(messages.length).toEqual(7);
+      [
+        { range: [[0,15],[0,16]], type: 'Error' },
+        { range: [[1,12],[1,13]], type: 'Error' },
+        { range: [[3,0],[3,25]], type: 'Error' },
+        { range: [[3,7],[3,25]], type: 'Error' },
+        { range: [[5,15],[5,19]], type: 'Error' },
+        { range: [[6,18],[6,19]], type: 'Error' },
+        { range: [[9,8],[9,9]], type: 'Error' }
+      ].forEach((expected, index) => {
+        expect(messages[index].type).toEqual(expected.type);
+        expect(messages[index].range).toEqual(expected.range);
       });
-    }));
+    });
+  });
+
+  it('finds something wrong with xo/bad.js', () => {
+    openFile('fixtures/xo/bad.js', (messages) => {
+      expect(messages.length).toEqual(5);
+      [
+        { range: [[3,0],[3,25]], type: 'Error' },
+        { range: [[3,0],[3,25]], type: 'Error' },
+        { range: [[3,7],[3,25]], type: 'Error' },
+        { range: [[3,25],[3,25]], type: 'Error' },
+        { range: [[6,2],[6,19]], type: 'Error' }
+      ].forEach((expected, index) => {
+        expect(messages[index].type).toEqual(expected.type);
+        expect(messages[index].range).toEqual(expected.range);
+      });
+    });
   });
 });
