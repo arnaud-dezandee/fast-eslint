@@ -19,6 +19,13 @@ Lightweight zeroconf ESLint plugin for Atom.
 
 * `apm install fast-eslint`
 
+## Bundled popular style guides
+
+<!-- * Airbnb: [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) -->
+* Standard: [eslint-config-standard](https://github.com/feross/eslint-config-standard)
+* Google: [eslint-config-google](https://github.com/google/eslint-config-google)
+* XO: [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo)
+
 ## MIT License
 
 Copyright (c) 2016 Arnaud Dezandee
