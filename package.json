@@ -1,7 +1,18 @@
 {
   "name": "fast-eslint",
   "version": "2.0.1",
-  "description": "Lightweight zeroconf ESLint plugin for Atom.",
+  "description": "ESLint linter plugin for JavaScript, lightweight zeroconf",
+  "keywords": [
+    "atom",
+    "javascript",
+    "linter",
+    "lint",
+    "eslint",
+    "airbnb",
+    "standard",
+    "google",
+    "xo"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Adezandee/fast-eslint.git"
