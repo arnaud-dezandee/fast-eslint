@@ -1,6 +1,6 @@
 {
   "name": "fast-eslint",
-  "version": "1.1.5",
+  "version": "2.0.0",
   "description": "Lightweight zeroconf ESLint plugin for Atom.",
   "repository": {
     "type": "git",
