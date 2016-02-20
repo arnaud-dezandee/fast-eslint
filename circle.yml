@@ -16,4 +16,4 @@ test:
   override:
     - npm test
   post:
-    - npm run semantic-release || true
+    - DEBUG=last-release-apm npm run semantic-release || true
