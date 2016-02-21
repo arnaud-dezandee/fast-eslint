@@ -21,8 +21,8 @@ Lightweight zeroconf ESLint plugin for Atom.
 
 ## Bundled popular style guides
 
-<!-- * Airbnb: [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) -->
-* Standard: [eslint-config-standard](https://github.com/feross/eslint-config-standard)
+* Airbnb: [eslint-config-airbnb](https://github.com/airbnb/javascript)
+* Standard: [eslint-config-standard](https://github.com/feross/standard)
 * Google: [eslint-config-google](https://github.com/google/eslint-config-google)
 * XO: [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo)
 
