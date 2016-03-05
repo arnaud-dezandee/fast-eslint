@@ -33,7 +33,7 @@ Copyright (c) 2016 Arnaud Dezandee
 [apm-v-image]: https://img.shields.io/apm/v/fast-eslint.svg
 [apm-d-image]: https://img.shields.io/apm/dm/fast-eslint.svg
 [apm-url]: https://atom.io/packages/fast-eslint
-[circle-image]: https://img.shields.io/circleci/project/Adezandee/fast-eslint.svg
+[circle-image]: https://img.shields.io/circleci/project/Adezandee/fast-eslint/master.svg
 [circle-url]: https://circleci.com/gh/Adezandee/fast-eslint/tree/master
 [david-image]: https://img.shields.io/david/Adezandee/fast-eslint.svg
 [david-url]: https://david-dm.org/Adezandee/fast-eslint
