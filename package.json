@@ -38,7 +38,7 @@
     "atom-package-deps": "~4.0.1",
     "babel-eslint": "~6.0.0-beta.6",
     "eslint": "~2.4.0",
-    "eslint-config-airbnb": "6.1.0",
+    "eslint-config-airbnb": "6.2.0",
     "eslint-config-google": "0.4.0",
     "eslint-config-standard": "5.1.0",
     "eslint-config-standard-jsx": "1.1.1",
