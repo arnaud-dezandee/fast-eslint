@@ -1,4 +1,6 @@
 machine:
+  node:
+    version: 5
   pre:
     - git config --global push.default simple
     - git config --global user.name "CircleCI"
