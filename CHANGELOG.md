@@ -1,3 +1,13 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/Adezandee/fast-eslint/compare/v2.3.0...v2.4.0) (2016-03-25)
+
+
+### Features
+
+* **eslint:** update eslint-config-airbnb to version 6.2.0 ([f6acab5](https://github.com/Adezandee/fast-eslint/commit/f6acab5))
+
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/Adezandee/fast-eslint/compare/v2.2.1...v2.3.0) (2016-03-17)
 
