@@ -1,3 +1,14 @@
+<a name="2.5.0"></a>
+# [2.5.0](https://github.com/Adezandee/fast-eslint/compare/v2.4.0...v2.5.0) (2016-04-01)
+
+
+### Features
+
+* **eslint:** update babel-eslint to version 6.0.2 ([c992f5c](https://github.com/Adezandee/fast-eslint/commit/c992f5c))
+* **eslint:** update eslint to version 2.5.3 ([b8296b1](https://github.com/Adezandee/fast-eslint/commit/b8296b1))
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/Adezandee/fast-eslint/compare/v2.3.0...v2.4.0) (2016-03-25)
 
