@@ -1,3 +1,15 @@
+<a name="2.7.0"></a>
+# [2.7.0](https://github.com/Adezandee/fast-eslint/compare/v2.6.0...v2.7.0) (2016-04-12)
+
+
+### Features
+
+* **eslint:** update eslint-config-airbnb to version 7.0.0 ([703434a](https://github.com/Adezandee/fast-eslint/commit/703434a))
+* **eslint:** update eslint-config-google to version 0.5.0 ([9c2629d](https://github.com/Adezandee/fast-eslint/commit/9c2629d))
+* **eslint:** update eslint-config-xo to version 0.13.0 ([9671f78](https://github.com/Adezandee/fast-eslint/commit/9671f78))
+
+
+
 <a name="2.6.0"></a>
 # [2.6.0](https://github.com/Adezandee/fast-eslint/compare/v2.5.0...v2.6.0) (2016-04-05)
 
