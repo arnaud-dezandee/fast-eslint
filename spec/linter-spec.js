@@ -91,4 +91,10 @@ describe('Fast-ESLint provider for Linter', () => {
       });
     });
   });
+
+  it('reports nothing with ignored ignore/bad.js', () => {
+    openFile('fixtures/ignore/bad.js', (messages) => {
+      expect(messages.length).toEqual(0);
+    });
+  });
 });
