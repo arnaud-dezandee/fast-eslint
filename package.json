@@ -40,6 +40,7 @@
     "babel-eslint": "~6.0.3",
     "eslint": "~2.8.0",
     "eslint-config-airbnb": "8.0.0",
+    "eslint-config-airbnb-base": "1.0.3",
     "eslint-config-google": "0.5.0",
     "eslint-config-standard": "5.1.0",
     "eslint-config-standard-jsx": "1.1.1",
