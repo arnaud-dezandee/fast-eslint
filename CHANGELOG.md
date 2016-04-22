@@ -1,3 +1,16 @@
+<a name="2.8.0"></a>
+# [2.8.0](https://github.com/Adezandee/fast-eslint/compare/v2.7.1...v2.8.0) (2016-04-22)
+
+
+### Features
+
+* **eslint:** install eslint-config-airbnb-base version 1.0.3 ([a17d3a9](https://github.com/Adezandee/fast-eslint/commit/a17d3a9))
+* **eslint:** update babel-eslint to version 6.0.3 ([80dca15](https://github.com/Adezandee/fast-eslint/commit/80dca15))
+* **eslint:** update eslint to version 2.8.0 ([9114fa8](https://github.com/Adezandee/fast-eslint/commit/9114fa8))
+* **eslint:** update eslint-config-airbnb to version 8.0.0 ([a20e4cd](https://github.com/Adezandee/fast-eslint/commit/a20e4cd))
+
+
+
 <a name="2.7.1"></a>
 ## [2.7.1](https://github.com/Adezandee/fast-eslint/compare/v2.7.0...v2.7.1) (2016-04-14)
 
