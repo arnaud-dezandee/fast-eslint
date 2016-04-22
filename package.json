@@ -55,7 +55,7 @@
   "devDependencies": {
     "condition-circle": "^1.2.0",
     "conventional-changelog-cli": "^1.1.1",
-    "cz-conventional-changelog": "^1.1.5",
+    "cz-conventional-changelog": "^1.1.6",
     "last-release-apm": "^1.2.0",
     "semantic-release": "^4.3.5"
   },
