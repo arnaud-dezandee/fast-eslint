@@ -42,7 +42,7 @@
     "eslint-config-airbnb": "8.0.0",
     "eslint-config-airbnb-base": "1.0.3",
     "eslint-config-google": "0.5.0",
-    "eslint-config-standard": "5.1.0",
+    "eslint-config-standard": "5.2.0",
     "eslint-config-standard-jsx": "1.1.1",
     "eslint-config-xo": "0.13.0",
     "eslint-plugin-babel": "3.2.0",
