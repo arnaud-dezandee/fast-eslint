@@ -1,3 +1,13 @@
+<a name="2.9.1"></a>
+## [2.9.1](https://github.com/Adezandee/fast-eslint/compare/v2.9.0...v2.9.1) (2016-04-29)
+
+
+### Bug Fixes
+
+* **eslint:** add project lookup paths for eslint-import-resolver modules ([25a4d5c](https://github.com/Adezandee/fast-eslint/commit/25a4d5c))
+
+
+
 <a name="2.9.0"></a>
 # [2.9.0](https://github.com/Adezandee/fast-eslint/compare/v2.8.0...v2.9.0) (2016-04-26)
 
