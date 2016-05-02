@@ -1,3 +1,17 @@
+<a name="2.10.0"></a>
+# [2.10.0](https://github.com/Adezandee/fast-eslint/compare/v2.9.1...v2.10.0) (2016-05-02)
+
+
+### Features
+
+* **eslint:** update eslint eslint-plugin-jsx-a11y to version 1.0.4 ([270da89](https://github.com/Adezandee/fast-eslint/commit/270da89))
+* **eslint:** update eslint to version 2.9.0 ([3b5650c](https://github.com/Adezandee/fast-eslint/commit/3b5650c))
+* **eslint:** update eslint-config-airbnb-base to version 2.0.0 ([fac9418](https://github.com/Adezandee/fast-eslint/commit/fac9418))
+* **eslint:** update eslint-config-xo to version 0.14.1 ([8a566bd](https://github.com/Adezandee/fast-eslint/commit/8a566bd))
+* **eslint:** update eslint-plugin-import to version 1.6.1 ([a29cd34](https://github.com/Adezandee/fast-eslint/commit/a29cd34))
+
+
+
 <a name="2.9.1"></a>
 ## [2.9.1](https://github.com/Adezandee/fast-eslint/compare/v2.9.0...v2.9.1) (2016-04-29)
 
