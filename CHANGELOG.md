@@ -1,3 +1,16 @@
+<a name="2.12.0"></a>
+# [2.12.0](https://github.com/Adezandee/fast-eslint/compare/v2.11.0...v2.12.0) (2016-05-31)
+
+
+### Features
+
+* **eslint:** update eslint to version 2.11.1 ([f7b667b](https://github.com/Adezandee/fast-eslint/commit/f7b667b))
+* **eslint:** update eslint-plugin-import to version 1.8.1 ([7afa8bd](https://github.com/Adezandee/fast-eslint/commit/7afa8bd))
+* **eslint:** update eslint-plugin-jsx-a11y to version 1.2.2 ([5ef828d](https://github.com/Adezandee/fast-eslint/commit/5ef828d))
+* **eslint:** update eslint-plugin-promise to version 1.3.1 ([786269e](https://github.com/Adezandee/fast-eslint/commit/786269e))
+
+
+
 <a name="2.11.0"></a>
 # [2.11.0](https://github.com/Adezandee/fast-eslint/compare/v2.10.0...v2.11.0) (2016-05-12)
 
