@@ -1,3 +1,20 @@
+<a name="2.13.0"></a>
+# [2.13.0](https://github.com/Adezandee/fast-eslint/compare/v2.12.0...v2.13.0) (2016-06-06)
+
+
+### Bug Fixes
+
+* **eslint:** load config from project path and global npm path ([4bb96c6](https://github.com/Adezandee/fast-eslint/commit/4bb96c6))
+
+
+### Features
+
+* **eslint:** update eslint-config-standard-jsx to version 1.2.1 ([205547f](https://github.com/Adezandee/fast-eslint/commit/205547f))
+* **eslint:** update eslint-plugin-jsx-a11y to version 1.3.0 ([8edae5d](https://github.com/Adezandee/fast-eslint/commit/8edae5d))
+* **eslint:** update eslint-plugin-promise to version 1.3.2 ([d4a6ce1](https://github.com/Adezandee/fast-eslint/commit/d4a6ce1))
+
+
+
 <a name="2.12.0"></a>
 # [2.12.0](https://github.com/Adezandee/fast-eslint/compare/v2.11.0...v2.12.0) (2016-05-31)
 
