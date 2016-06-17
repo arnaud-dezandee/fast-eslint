@@ -1,3 +1,17 @@
+<a name="2.14.0"></a>
+# [2.14.0](https://github.com/Adezandee/fast-eslint/compare/v2.13.0...v2.14.0) (2016-06-17)
+
+
+### Features
+
+* **eslint:** update eslint to version 2.13.0 ([5799f87](https://github.com/Adezandee/fast-eslint/commit/5799f87))
+* **eslint:** update eslint-config-google to version 0.6.0 ([e5a03e5](https://github.com/Adezandee/fast-eslint/commit/e5a03e5))
+* **eslint:** update eslint-config-xo to version 0.15.2 ([0d1a7c0](https://github.com/Adezandee/fast-eslint/commit/0d1a7c0))
+* **eslint:** update eslint-plugin-jsx-a11y to version 1.5.3 ([2dcb865](https://github.com/Adezandee/fast-eslint/commit/2dcb865))
+* **eslint:** update eslint-plugin-react to version 5.2.1 ([6c0c90a](https://github.com/Adezandee/fast-eslint/commit/6c0c90a))
+
+
+
 <a name="2.13.0"></a>
 # [2.13.0](https://github.com/Adezandee/fast-eslint/compare/v2.12.0...v2.13.0) (2016-06-06)
 
