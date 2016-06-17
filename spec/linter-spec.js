@@ -44,9 +44,8 @@ describe('Fast-ESLint provider for Linter', () => {
 
   it('finds something wrong with google/bad.js', () => {
     openFile('fixtures/google/bad.js', (messages) => {
-      expect(messages.length).toEqual(5);
+      expect(messages.length).toEqual(4);
       [
-        { range: [[3, 0], [3, 25]], type: 'Error' },
         { range: [[3, 0], [3, 25]], type: 'Error' },
         { range: [[3, 7], [3, 25]], type: 'Error' },
         { range: [[3, 25], [3, 25]], type: 'Error' },
