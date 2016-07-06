@@ -1,3 +1,13 @@
+<a name="2.15.1"></a>
+## [2.15.1](https://github.com/Adezandee/fast-eslint/compare/v2.15.0...v2.15.1) (2016-07-06)
+
+
+### Bug Fixes
+
+* **linter:** validate column value from eslint ([274de3e](https://github.com/Adezandee/fast-eslint/commit/274de3e))
+
+
+
 <a name="2.15.0"></a>
 # [2.15.0](https://github.com/Adezandee/fast-eslint/compare/v2.14.0...v2.15.0) (2016-07-06)
 
