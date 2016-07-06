@@ -28,13 +28,17 @@ describe('Fast-ESLint provider for Linter', () => {
 
   it('finds something wrong with airbnb/bad.js', () => {
     openFile('fixtures/airbnb/bad.js', (messages) => {
-      expect(messages.length).toEqual(5);
+      expect(messages.length).toEqual(9);
       const expected = [
         { range: [[0, 0], [0, 3]], type: 'Error' },
         { range: [[1, 0], [1, 3]], type: 'Error' },
         { range: [[3, 0], [3, 2]], type: 'Error' },
         { range: [[3, 7], [3, 13]], type: 'Error' },
         { range: [[3, 24], [3, 25]], type: 'Error' },
+        { range: [[10, 0], [10, 0]], type: 'Error' },
+        { range: [[11, 0], [11, 1]], type: 'Error' },
+        { range: [[11, 0], [11, 1]], type: 'Error' },
+        { range: [[11, 0], [11, 1]], type: 'Error' },
       ];
       expect(messages.map(({ range, type }) => ({ range, type }))).toEqual(expected);
     });

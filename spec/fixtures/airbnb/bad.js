@@ -7,4 +7,7 @@ function myFunc() {
   return 'doSmthg';
 }
 
+
+
+a
 myFunc();
