@@ -1,3 +1,18 @@
+<a name="2.15.0"></a>
+# [2.15.0](https://github.com/Adezandee/fast-eslint/compare/v2.14.0...v2.15.0) (2016-07-06)
+
+
+### Features
+
+* **eslint:** update babel-eslint to version 6.1.0 ([dbaa42e](https://github.com/Adezandee/fast-eslint/commit/dbaa42e))
+* **eslint:** update eslint to version 2.13.1 ([6eada67](https://github.com/Adezandee/fast-eslint/commit/6eada67))
+* **eslint:** update eslint-plugin-babel to version 3.3.0 ([656c89c](https://github.com/Adezandee/fast-eslint/commit/656c89c))
+* **eslint:** update eslint-plugin-import to version 1.10.2 ([a17666f](https://github.com/Adezandee/fast-eslint/commit/a17666f))
+* **eslint:** update eslint-plugin-jsx-a11y to version 1.5.5 ([5fb0099](https://github.com/Adezandee/fast-eslint/commit/5fb0099))
+* **eslint:** update eslint-plugin-react to version 5.2.2 ([ee40edb](https://github.com/Adezandee/fast-eslint/commit/ee40edb))
+
+
+
 <a name="2.14.0"></a>
 # [2.14.0](https://github.com/Adezandee/fast-eslint/compare/v2.13.0...v2.14.0) (2016-06-17)
 
