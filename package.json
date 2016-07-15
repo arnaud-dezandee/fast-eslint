@@ -44,7 +44,7 @@
     "eslint-config-google": "0.6.0",
     "eslint-config-standard": "5.3.1",
     "eslint-config-standard-jsx": "1.2.1",
-    "eslint-config-xo": "0.15.2",
+    "eslint-config-xo": "0.15.3",
     "eslint-plugin-babel": "3.3.0",
     "eslint-plugin-import": "1.10.2",
     "eslint-plugin-jsx-a11y": "1.5.5",
