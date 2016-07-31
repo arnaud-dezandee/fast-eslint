@@ -24,6 +24,37 @@
   "engines": {
     "atom": ">=1.0.0"
   },
+  "configSchema": {
+    "baseConfigExtends": {
+      "title": "Base Config Extends",
+      "description": "ESLint v3 now requires that you use a configuration to run.",
+      "type": "string",
+      "default": "disabled",
+      "enum": [
+        "disabled",
+        "eslint:recommended",
+        "eslint:all",
+        "standard",
+        "xo"
+      ]
+    },
+    "grammarScopes": {
+      "title": "Grammar scopes",
+      "description": "Run `Editor: Log Cursor Scope` to determine file scopes.",
+      "type": "array",
+      "default": [
+        "source.js",
+        "source.jsx",
+        "source.es6",
+        "source.js.jsx",
+        "source.babel",
+        "source.js-semantic"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
   "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint lib",
@@ -38,7 +69,7 @@
     "atom-linter": "~7.0.0",
     "atom-package-deps": "~4.0.1",
     "babel-eslint": "~6.1.0",
-    "eslint": "~2.13.1",
+    "eslint": "~3.2.0",
     "eslint-config-airbnb": "9.0.1",
     "eslint-config-airbnb-base": "3.0.1",
     "eslint-config-google": "0.6.0",

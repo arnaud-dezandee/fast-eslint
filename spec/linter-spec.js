@@ -34,11 +34,11 @@ describe('Fast-ESLint provider for Linter', () => {
         { range: [[1, 0], [1, 3]], type: 'Error' },
         { range: [[3, 0], [3, 2]], type: 'Error' },
         { range: [[3, 7], [3, 13]], type: 'Error' },
-        { range: [[3, 24], [3, 25]], type: 'Error' },
+        { range: [[3, 25], [3, 25]], type: 'Error' },
         { range: [[10, 0], [10, 0]], type: 'Error' },
         { range: [[11, 0], [11, 1]], type: 'Error' },
         { range: [[11, 0], [11, 1]], type: 'Error' },
-        { range: [[11, 0], [11, 1]], type: 'Error' },
+        { range: [[11, 1], [11, 1]], type: 'Error' },
       ];
       expect(messages.map(({ range, type }) => ({ range, type }))).toEqual(expected);
     });
@@ -50,7 +50,7 @@ describe('Fast-ESLint provider for Linter', () => {
       const expected = [
         { range: [[3, 0], [3, 2]], type: 'Error' },
         { range: [[3, 7], [3, 13]], type: 'Error' },
-        { range: [[3, 24], [3, 25]], type: 'Error' },
+        { range: [[3, 25], [3, 25]], type: 'Error' },
         { range: [[5, 0], [5, 8]], type: 'Warning' },
       ];
       expect(messages.map(({ range, type }) => ({ range, type }))).toEqual(expected);
@@ -80,7 +80,7 @@ describe('Fast-ESLint provider for Linter', () => {
         { range: [[3, 0], [3, 2]], type: 'Error' },
         { range: [[3, 0], [3, 2]], type: 'Error' },
         { range: [[3, 7], [3, 13]], type: 'Error' },
-        { range: [[3, 24], [3, 25]], type: 'Error' },
+        { range: [[3, 25], [3, 25]], type: 'Error' },
         { range: [[6, 2], [6, 8]], type: 'Error' },
       ];
       expect(messages.map(({ range, type }) => ({ range, type }))).toEqual(expected);
