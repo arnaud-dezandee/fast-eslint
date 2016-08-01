@@ -1,3 +1,25 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/Adezandee/fast-eslint/compare/v2.15.1...v3.0.0) (2016-08-01)
+
+
+### Code Refactoring
+
+* **eslint:** remove eslint-config and plugins dependencies ([f35bcf5](https://github.com/Adezandee/fast-eslint/commit/f35bcf5))
+
+
+### Features
+
+* **eslint:** upgrade to ESLint v3.2.0 ([6bb36b6](https://github.com/Adezandee/fast-eslint/commit/6bb36b6))
+
+
+### BREAKING CHANGES
+
+* eslint: removed shared config, please install dependencies
+according to your specific needs locally or globally through npm
+* eslint: Upgraded to ESLint v3
+
+
+
 <a name="2.15.1"></a>
 ## [2.15.1](https://github.com/Adezandee/fast-eslint/compare/v2.15.0...v2.15.1) (2016-07-06)
 
