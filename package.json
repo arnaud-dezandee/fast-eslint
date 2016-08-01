@@ -1,7 +1,7 @@
 {
   "name": "fast-eslint",
   "version": "2.15.1",
-  "description": "ESLint linter plugin for JavaScript, lightweight zeroconf",
+  "description": "ESLint linter plugin for JavaScript, lightweight",
   "keywords": [
     "atom",
     "javascript",
@@ -24,6 +24,33 @@
   "engines": {
     "atom": ">=1.0.0"
   },
+  "configSchema": {
+    "baseConfigExtends": {
+      "title": "BaseConfig Extends",
+      "description": "List of ESLint shareable config names. See [shareable configs](http://eslint.org/docs/developer-guide/shareable-configs). Those will be used as *baseConfig.extends*. Example: **standard, standard-react**",
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "grammarScopes": {
+      "title": "Grammar scopes",
+      "description": "Run `Editor: Log Cursor Scope` to determine file scopes.",
+      "type": "array",
+      "default": [
+        "source.js",
+        "source.jsx",
+        "source.es6",
+        "source.js.jsx",
+        "source.babel",
+        "source.js-semantic"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
   "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint lib",
@@ -35,29 +62,18 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
-    "atom-linter": "~6.0.0",
+    "atom-linter": "~7.0.0",
     "atom-package-deps": "~4.0.1",
-    "babel-eslint": "~6.1.0",
-    "eslint": "~2.13.1",
-    "eslint-config-airbnb": "9.0.1",
-    "eslint-config-airbnb-base": "3.0.1",
-    "eslint-config-google": "0.6.0",
-    "eslint-config-standard": "5.3.1",
-    "eslint-config-standard-jsx": "1.2.1",
-    "eslint-config-xo": "0.15.2",
-    "eslint-plugin-babel": "3.3.0",
-    "eslint-plugin-import": "1.10.2",
-    "eslint-plugin-jsx-a11y": "1.5.5",
-    "eslint-plugin-promise": "1.3.2",
-    "eslint-plugin-react": "5.2.2",
-    "eslint-plugin-standard": "1.3.2",
-    "lodash.uniq": "~4.3.0",
+    "eslint": "~3.2.0",
+    "lodash.uniq": "~4.4.0",
     "loophole": "~1.1.0"
   },
   "devDependencies": {
     "condition-circle": "^1.2.0",
     "conventional-changelog-cli": "^1.2.0",
     "cz-conventional-changelog": "^1.1.6",
+    "eslint-config-airbnb-base": "^5.0.1",
+    "eslint-plugin-import": "^1.12.0",
     "last-release-apm": "^1.2.1",
     "semantic-release": "^4.3.5"
   },
