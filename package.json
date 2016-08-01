@@ -1,7 +1,7 @@
 {
   "name": "fast-eslint",
   "version": "2.15.1",
-  "description": "ESLint linter plugin for JavaScript, lightweight zeroconf",
+  "description": "ESLint linter plugin for JavaScript, lightweight",
   "keywords": [
     "atom",
     "javascript",
@@ -26,17 +26,13 @@
   },
   "configSchema": {
     "baseConfigExtends": {
-      "title": "Base Config Extends",
-      "description": "ESLint v3 now requires that you use a configuration to run.",
-      "type": "string",
-      "default": "disabled",
-      "enum": [
-        "disabled",
-        "eslint:recommended",
-        "eslint:all",
-        "standard",
-        "xo"
-      ]
+      "title": "BaseConfig Extends",
+      "description": "List of ESLint shareable config names. See [shareable configs](http://eslint.org/docs/developer-guide/shareable-configs). Those will be used as *baseConfig.extends*. Example: **standard, standard-react**",
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
     },
     "grammarScopes": {
       "title": "Grammar scopes",
