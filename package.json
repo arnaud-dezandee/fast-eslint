@@ -72,7 +72,7 @@
     "condition-circle": "^1.2.0",
     "conventional-changelog-cli": "^1.2.0",
     "cz-conventional-changelog": "^1.1.6",
-    "eslint-config-airbnb-base": "^5.0.1",
+    "eslint-config-airbnb-base": "^5.0.2",
     "eslint-plugin-import": "^1.12.0",
     "last-release-apm": "^1.2.1",
     "semantic-release": "^4.3.5"
