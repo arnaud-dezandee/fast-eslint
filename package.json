@@ -62,20 +62,20 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
-    "atom-linter": "~8.0.0",
-    "atom-package-deps": "~4.3.1",
-    "eslint": "~3.4.0",
-    "lodash.uniq": "~4.5.0",
-    "loophole": "~1.1.0"
+    "atom-linter": "8.0.0",
+    "atom-package-deps": "4.3.1",
+    "eslint": "3.4.0",
+    "lodash.uniq": "4.5.0",
+    "loophole": "1.1.0"
   },
   "devDependencies": {
-    "condition-circle": "^1.2.0",
-    "conventional-changelog-cli": "^1.2.0",
-    "cz-conventional-changelog": "^1.1.6",
-    "eslint-config-airbnb-base": "^5.0.3",
-    "eslint-plugin-import": "^1.12.0",
-    "last-release-apm": "^1.2.1",
-    "semantic-release": "^4.3.5"
+    "condition-circle": "~1.2.0",
+    "conventional-changelog-cli": "~1.2.0",
+    "cz-conventional-changelog": "~1.1.6",
+    "eslint-config-airbnb-base": "~5.0.3",
+    "eslint-plugin-import": "~1.12.0",
+    "last-release-apm": "~1.2.1",
+    "semantic-release": "~4.3.5"
   },
   "package-deps": [
     "linter"
