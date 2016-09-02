@@ -1,3 +1,18 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/Adezandee/fast-eslint/compare/v3.0.0...v3.1.0) (2016-09-02)
+
+
+### Bug Fixes
+
+* **linter:** check for empty report results ([df4cba3](https://github.com/Adezandee/fast-eslint/commit/df4cba3))
+
+
+### Features
+
+* **eslint:** update eslint to version 3.4.0 ([2fbf332](https://github.com/Adezandee/fast-eslint/commit/2fbf332))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/Adezandee/fast-eslint/compare/v2.15.1...v3.0.0) (2016-08-01)
 
