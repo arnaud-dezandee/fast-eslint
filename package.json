@@ -73,7 +73,7 @@
     "conventional-changelog-cli": "~1.2.0",
     "cz-conventional-changelog": "~1.2.0",
     "eslint-config-airbnb-base": "~7.0.1",
-    "eslint-plugin-import": "~1.14.0",
+    "eslint-plugin-import": "~1.15.0",
     "last-release-apm": "~1.2.1",
     "semantic-release": "~4.3.5"
   },
