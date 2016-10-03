@@ -1,3 +1,13 @@
+<a name="3.4.0"></a>
+# [3.4.0](https://github.com/Adezandee/fast-eslint/compare/v3.3.0...v3.4.0) (2016-10-03)
+
+
+### Features
+
+* **eslint:** update eslint to version 3.7.0 ([598f818](https://github.com/Adezandee/fast-eslint/commit/598f818))
+
+
+
 <a name="3.3.0"></a>
 # [3.3.0](https://github.com/Adezandee/fast-eslint/compare/v3.2.0...v3.3.0) (2016-09-26)
 
