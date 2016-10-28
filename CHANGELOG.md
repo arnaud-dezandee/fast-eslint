@@ -1,3 +1,13 @@
+<a name="3.5.1"></a>
+## [3.5.1](https://github.com/Adezandee/fast-eslint/compare/v3.5.0...v3.5.1) (2016-10-28)
+
+
+### Bug Fixes
+
+* **errors:** change how config errors are displayed ([4e91153](https://github.com/Adezandee/fast-eslint/commit/4e91153)), closes [#166](https://github.com/Adezandee/fast-eslint/issues/166)
+
+
+
 <a name="3.5.0"></a>
 # [3.5.0](https://github.com/Adezandee/fast-eslint/compare/v3.4.0...v3.5.0) (2016-10-18)
 
