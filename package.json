@@ -53,7 +53,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "pretest": "eslint lib",
+    "pretest": "eslint lib spec/*.js",
     "test": "apm test",
     "pregit:push": "git commit -am \"Prepare $npm_package_version release\"",
     "git:push": "git push",
