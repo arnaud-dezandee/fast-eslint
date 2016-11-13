@@ -30,7 +30,7 @@ const htmlMsg = (ruleId, message) => (
 
 describe('Fast-ESLint provider for Linter', () => {
   beforeEach(() =>
-    waitsForPromise(() => atom.packages.activatePackage('fast-eslint'))
+    waitsForPromise(() => atom.packages.activatePackage('fast-eslint')),
   );
 
   describe('finds something wrong with airbnb/bad.js', () => {
@@ -66,8 +66,8 @@ describe('Fast-ESLint provider for Linter', () => {
 
     beforeEach(() =>
       waitsForPromise(() =>
-        openFile(filePath).then(messages => (results = messages))
-      )
+        openFile(filePath).then(messages => (results = messages)),
+      ),
     );
 
     it('messages length', () => {
@@ -91,8 +91,8 @@ describe('Fast-ESLint provider for Linter', () => {
 
     beforeEach(() =>
       waitsForPromise(() =>
-        openFile(filePath).then(messages => (results = messages))
-      )
+        openFile(filePath).then(messages => (results = messages)),
+      ),
     );
 
     it('ignored', () => {

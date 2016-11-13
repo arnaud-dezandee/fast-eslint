@@ -53,7 +53,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "pretest": "eslint lib",
+    "pretest": "eslint lib spec/*.js",
     "test": "apm test",
     "pregit:push": "git commit -am \"Prepare $npm_package_version release\"",
     "git:push": "git push",
@@ -64,7 +64,7 @@
   "dependencies": {
     "atom-linter": "8.0.0",
     "atom-package-deps": "4.3.1",
-    "eslint": "3.9.1",
+    "eslint": "3.10.0",
     "lodash.uniq": "4.5.0",
     "loophole": "1.1.0"
   },
@@ -72,8 +72,8 @@
     "condition-circle": "~1.5.0",
     "conventional-changelog-cli": "~1.2.0",
     "cz-conventional-changelog": "~1.2.0",
-    "eslint-config-airbnb-base": "~9.0.0",
-    "eslint-plugin-import": "~2.0.1",
+    "eslint-config-airbnb-base": "~10.0.1",
+    "eslint-plugin-import": "~2.2.0",
     "last-release-apm": "~1.2.1",
     "semantic-release": "~4.3.5"
   },
