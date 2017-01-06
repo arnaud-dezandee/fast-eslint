@@ -1,6 +1,6 @@
 {
   "name": "fast-eslint",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "description": "ESLint linter plugin for JavaScript, lightweight",
   "keywords": [
     "atom",
