@@ -41,15 +41,15 @@ describe('Fast-ESLint provider for Linter', () => {
       'no-unused-expressions', 'no-undef', 'semi',
     ];
     const expectedRanges = [
-      { start: { row: 0, column: 0 }, end: { row: 0, column: 3 } },
-      { start: { row: 2, column: 0 }, end: { row: 2, column: 2 } },
-      { start: { row: 2, column: 7 }, end: { row: 2, column: 13 } },
-      { start: { row: 2, column: 10 }, end: { row: 2, column: 13 } },
-      { start: { row: 2, column: 25 }, end: { row: 2, column: 25 } },
-      { start: { row: 7, column: 0 }, end: { row: 7, column: 0 } },
-      { start: { row: 10, column: 0 }, end: { row: 10, column: 1 } },
-      { start: { row: 10, column: 0 }, end: { row: 10, column: 1 } },
-      { start: { row: 10, column: 1 }, end: { row: 10, column: 1 } },
+      [[0, 0], [0, 3]],
+      [[2, 0], [2, 2]],
+      [[2, 7], [2, 13]],
+      [[2, 10], [2, 13]],
+      [[2, 25], [2, 25]],
+      [[7, 0], [7, 0]],
+      [[10, 0], [10, 1]],
+      [[10, 0], [10, 1]],
+      [[10, 1], [10, 1]],
     ];
     const expectedMessages = [
       'Unexpected var, use let or const instead.',
