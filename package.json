@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "atom-linter": "9.0.1",
-    "atom-package-deps": "4.4.1",
+    "atom-package-deps": "4.5.0",
     "eslint": "3.17.0",
     "lodash.uniq": "4.5.0",
     "loophole": "1.1.0"
@@ -78,7 +78,7 @@
     "semantic-release": "~6.3.2"
   },
   "package-deps": [
-    "linter"
+    "linter:2.0.0"
   ],
   "providedServices": {
     "linter": {
