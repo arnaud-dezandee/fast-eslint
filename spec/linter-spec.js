@@ -20,8 +20,8 @@ const openFile = filePath => (
     .then(editor => lint(editor))
 );
 
-const htmlMsg = (ruleId, message) => (
-  `<span class="badge badge-flexible">${ruleId || 'Fatal'}</span> ${message}`
+const formatedMsg = (ruleId, message) => (
+  `${ruleId || 'fatal'}: ${message}`
 );
 
 /**
@@ -76,11 +76,11 @@ describe('Fast-ESLint provider for Linter', () => {
 
     expectedRuleIds.forEach((rule, idx) => {
       it(rule, () => {
-        const { filePath: file, range, type, html } = results[idx];
+        const { location: { file, position }, severity, excerpt } = results[idx];
         expect(file).toEqual(filePath);
-        expect(range).toEqual(expectedRanges[idx]);
-        expect(type).toEqual('Error');
-        expect(html).toEqual(htmlMsg(expectedRuleIds[idx], expectedMessages[idx]));
+        expect(position).toEqual(expectedRanges[idx]);
+        expect(severity).toEqual('error');
+        expect(excerpt).toEqual(formatedMsg(expectedRuleIds[idx], expectedMessages[idx]));
       });
     });
   });
