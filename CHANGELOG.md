@@ -1,3 +1,13 @@
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/Adezandee/fast-eslint/compare/v4.0.0...v4.0.1) (2017-07-03)
+
+
+### Bug Fixes
+
+* **linter:** inject custom lookup paths for engine init ([712c86e](https://github.com/Adezandee/fast-eslint/commit/712c86e))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/Adezandee/fast-eslint/compare/v3.13.0...v4.0.0) (2017-07-03)
 
