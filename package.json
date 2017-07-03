@@ -65,7 +65,6 @@
     "atom-linter": "10.0.0",
     "atom-package-deps": "4.6.0",
     "eslint": "4.1.1",
-    "lodash.uniq": "4.5.0",
     "loophole": "1.1.0"
   },
   "devDependencies": {
