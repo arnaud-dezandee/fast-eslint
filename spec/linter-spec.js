@@ -66,7 +66,7 @@ describe('Fast-ESLint provider for Linter', () => {
 
     beforeEach(() =>
       waitsForPromise(() =>
-        openFile(filePath).then(messages => (results = messages)),
+        openFile(filePath).then((messages) => { results = messages; }),
       ),
     );
 
@@ -91,7 +91,7 @@ describe('Fast-ESLint provider for Linter', () => {
 
     beforeEach(() =>
       waitsForPromise(() =>
-        openFile(filePath).then(messages => (results = messages)),
+        openFile(filePath).then((messages) => { results = messages; }),
       ),
     );
 
