@@ -1,3 +1,13 @@
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/Adezandee/fast-eslint/compare/v4.1.0...v4.2.0) (2017-08-10)
+
+
+### Features
+
+* **eslint:** update eslint to version 4.4.1 ([8c3c175](https://github.com/Adezandee/fast-eslint/commit/8c3c175))
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/Adezandee/fast-eslint/compare/v4.0.2...v4.1.0) (2017-07-10)
 
