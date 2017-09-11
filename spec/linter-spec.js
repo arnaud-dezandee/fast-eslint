@@ -3,16 +3,14 @@
 /**
  * Dependencies
  */
-
-import path from 'path';
+const path = require('path');
+const { lint } = require('../lib/index.js').provideLinter();
 
 process.chdir('/');
 
 /**
  * Privates
  */
-
-const lint = require('../lib/index.js').provideLinter().lint;
 
 const openFile = filePath => (
   atom.workspace
@@ -30,7 +28,9 @@ const formatedMsg = (ruleId, message) => (
 
 describe('Fast-ESLint provider for Linter', () => {
   beforeEach(() =>
-    waitsForPromise(() => atom.packages.activatePackage('fast-eslint')),
+    waitsForPromise(() =>
+      atom.packages.activatePackage('fast-eslint'),
+    ),
   );
 
   describe('finds something wrong with airbnb/bad.js', () => {

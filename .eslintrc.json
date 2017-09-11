@@ -9,6 +9,8 @@
     "atom": true
   },
   "rules": {
+    "function-paren-newline": 0,
+    "object-curly-newline": 0,
     "no-underscore-dangle": 0,
     "no-param-reassign": 0,
     "global-require": 0,
