@@ -70,7 +70,7 @@
   "devDependencies": {
     "condition-circle": "~1.5.0",
     "conventional-changelog-cli": "~1.3.4",
-    "cz-conventional-changelog": "~2.0.0",
+    "cz-conventional-changelog": "~2.1.0",
     "eslint-config-airbnb-base": "~12.0.2",
     "eslint-plugin-import": "~2.7.0",
     "last-release-apm": "~1.3.1",
