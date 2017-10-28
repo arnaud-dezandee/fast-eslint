@@ -64,15 +64,15 @@
   "dependencies": {
     "atom-linter": "10.0.0",
     "atom-package-deps": "4.6.0",
-    "eslint": "4.8.0",
+    "eslint": "4.10.0",
     "loophole": "1.1.0"
   },
   "devDependencies": {
     "condition-circle": "~1.5.0",
     "conventional-changelog-cli": "~1.3.4",
-    "cz-conventional-changelog": "~2.0.0",
-    "eslint-config-airbnb-base": "~12.0.2",
-    "eslint-plugin-import": "~2.7.0",
+    "cz-conventional-changelog": "~2.1.0",
+    "eslint-config-airbnb-base": "~12.1.0",
+    "eslint-plugin-import": "~2.8.0",
     "last-release-apm": "~1.3.1",
     "semantic-release": "~7.0.2"
   },
