@@ -63,18 +63,17 @@
   },
   "dependencies": {
     "atom-linter": "10.0.0",
-    "atom-package-deps": "4.6.1",
-    "eslint": "4.13.1",
+    "atom-package-deps": "4.6.2",
+    "eslint": "4.19.1",
     "loophole": "1.1.0"
   },
   "devDependencies": {
-    "condition-circle": "~1.5.0",
-    "conventional-changelog-cli": "~1.3.5",
+    "conventional-changelog-cli": "~1.3.21",
     "cz-conventional-changelog": "~2.1.0",
     "eslint-config-airbnb-base": "~12.1.0",
-    "eslint-plugin-import": "~2.8.0",
+    "eslint-plugin-import": "~2.10.0",
     "last-release-apm": "~1.3.1",
-    "semantic-release": "~7.0.2"
+    "semantic-release": "~15.1.4"
   },
   "package-deps": [
     "linter:2.0.0"
