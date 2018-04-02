@@ -55,10 +55,6 @@
   "scripts": {
     "pretest": "eslint lib spec/*.js",
     "test": "apm test",
-    "pregit:push": "git commit -am \"Prepare $npm_package_version release\"",
-    "git:push": "git push",
-    "apm:publish": "apm publish -t v$npm_package_version",
-    "semantic-release": "semantic-release pre && npm run changelog && npm install && npm run git:push && semantic-release post && npm run apm:publish",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
@@ -68,12 +64,11 @@
     "loophole": "1.1.0"
   },
   "devDependencies": {
+    "@semantic-release/apm-config": "2.0.0",
     "conventional-changelog-cli": "~1.3.21",
-    "cz-conventional-changelog": "~2.1.0",
     "eslint-config-airbnb-base": "~12.1.0",
     "eslint-plugin-import": "~2.10.0",
-    "last-release-apm": "~1.3.1",
-    "semantic-release": "~15.1.4"
+    "semantic-release": "15.1.4"
   },
   "package-deps": [
     "linter:2.0.0"
@@ -86,12 +81,6 @@
     }
   },
   "release": {
-    "verifyConditions": "condition-circle",
-    "getLastRelease": "last-release-apm"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "extends": "@semantic-release/apm-config"
   }
 }
