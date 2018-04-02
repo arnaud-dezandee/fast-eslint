@@ -1,3 +1,11 @@
+<a name="4.9.0"></a>
+# [4.9.0](https://github.com/Adezandee/fast-eslint/compare/v4.8.0...v4.9.0) (2018-04-02)
+
+
+### Features
+
+* **eslint:** update eslint to version 4.19.1 ([c089e12](https://github.com/Adezandee/fast-eslint/commit/c089e12))
+
 <a name="4.8.0"></a>
 # [4.8.0](https://github.com/Adezandee/fast-eslint/compare/v4.7.0...v4.8.0) (2017-12-16)
 
@@ -620,7 +628,3 @@ according to your specific needs locally or globally through npm
 
 <a name="1.0.0"></a>
 # 1.0.0 (2015-12-02)
-
-
-
-
