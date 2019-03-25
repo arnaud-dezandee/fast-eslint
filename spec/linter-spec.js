@@ -27,11 +27,7 @@ const formatedMsg = (ruleId, message) => (
  */
 
 describe('Fast-ESLint provider for Linter', () => {
-  beforeEach(() =>
-    waitsForPromise(() =>
-      atom.packages.activatePackage('fast-eslint'),
-    ),
-  );
+  beforeEach(() => waitsForPromise(() => atom.packages.activatePackage('fast-eslint')));
 
   describe('finds something wrong with airbnb/bad.js', () => {
     const filePath = path.join(__dirname, 'fixtures/airbnb/bad.js');
@@ -64,11 +60,7 @@ describe('Fast-ESLint provider for Linter', () => {
     ];
     let results = [];
 
-    beforeEach(() =>
-      waitsForPromise(() =>
-        openFile(filePath).then((messages) => { results = messages; }),
-      ),
-    );
+    beforeEach(() => waitsForPromise(() => openFile(filePath).then((messages) => { results = messages; })));
 
     it('messages length', () => {
       expect(results.length).toEqual(9);
@@ -89,11 +81,7 @@ describe('Fast-ESLint provider for Linter', () => {
     const filePath = path.join(__dirname, 'fixtures/ignore/bad.js');
     let results = [];
 
-    beforeEach(() =>
-      waitsForPromise(() =>
-        openFile(filePath).then((messages) => { results = messages; }),
-      ),
-    );
+    beforeEach(() => waitsForPromise(() => openFile(filePath).then((messages) => { results = messages; })));
 
     it('ignored', () => {
       expect(results.length).toEqual(0);
