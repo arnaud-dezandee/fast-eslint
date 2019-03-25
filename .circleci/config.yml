@@ -1,0 +1,24 @@
+version: 2
+jobs:
+  build:
+    working_directory: /tmp/project
+    environment:
+      DISPLAY: ":99"
+      ATOM_CHANNEL: "stable"
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run: sudo apt-get update
+      - run: sudo apt-get --assume-yes --quiet install curl xvfb
+      - run:
+          name: Start display server for Atom
+          command: /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1024x768x16 +extension RANDR
+          background: true
+      - run: curl -L https://atom.io/download/deb > atom-amd64.deb
+      - run: sudo dpkg --install atom-amd64.deb || true
+      - run: sudo apt-get -f install
+      - run: apm -v
+      - run: apm install
+      - run: npm test
+      - run: npx semantic-release || true
