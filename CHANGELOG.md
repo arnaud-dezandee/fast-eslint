@@ -1,3 +1,10 @@
+# [4.10.0](https://github.com/Adezandee/fast-eslint/compare/v4.9.0...v4.10.0) (2019-03-25)
+
+
+### Features
+
+* **package:** upgrade npm dependencies ([ec93c4c](https://github.com/Adezandee/fast-eslint/commit/ec93c4c))
+
 <a name="4.9.0"></a>
 # [4.9.0](https://github.com/Adezandee/fast-eslint/compare/v4.8.0...v4.9.0) (2018-04-02)
 
