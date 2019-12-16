@@ -12,10 +12,10 @@ process.chdir('/');
  * Privates
  */
 
-const openFile = filePath => (
+const openFile = (filePath) => (
   atom.workspace
     .open(filePath)
-    .then(editor => lint(editor))
+    .then((editor) => lint(editor))
 );
 
 const formatedMsg = (ruleId, message) => (
