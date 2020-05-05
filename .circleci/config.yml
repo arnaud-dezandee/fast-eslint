@@ -6,7 +6,7 @@ jobs:
       DISPLAY: ":99"
       ATOM_CHANNEL: "stable"
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:10
     steps:
       - checkout
       - run: sudo apt-get update
