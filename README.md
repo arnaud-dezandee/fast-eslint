@@ -58,15 +58,15 @@ Go to `Atom` -> `Config...` and enter:
 
 ### MIT License
 
-Copyright (c) 2016 Arnaud Dezandee
+Copyright (c) 2016-2020 Arnaud Dezandee
 
 [apm-v-image]: https://img.shields.io/apm/v/fast-eslint.svg
 [apm-d-image]: https://img.shields.io/apm/dm/fast-eslint.svg
 [apm-url]: https://atom.io/packages/fast-eslint
-[circle-image]: https://img.shields.io/circleci/project/Adezandee/fast-eslint/master.svg
-[circle-url]: https://circleci.com/gh/Adezandee/fast-eslint/tree/master
-[david-image]: https://img.shields.io/david/Adezandee/fast-eslint.svg
-[david-url]: https://david-dm.org/Adezandee/fast-eslint
+[circle-image]: https://circleci.com/gh/circleci/circleci-docs.svg?style=shield
+[circle-url]: https://circleci.com/gh/arnaud-dezandee/fast-eslint/tree/master
+[david-image]: https://img.shields.io/david/arnaud-dezandee/fast-eslint.svg
+[david-url]: https://david-dm.org/arnaud-dezandee/fast-eslint
 [semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat
 [semantic-url]: https://github.com/semantic-release/semantic-release
 [standard-image]: https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg?style=flat
