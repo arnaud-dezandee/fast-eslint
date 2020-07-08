@@ -1,3 +1,10 @@
+# [4.14.0](https://github.com/arnaud-dezandee/fast-eslint/compare/v4.13.0...v4.14.0) (2020-07-08)
+
+
+### Features
+
+* **eslint:** update eslint to version 7.4.0 ([ba48b78](https://github.com/arnaud-dezandee/fast-eslint/commit/ba48b78f26c6d4fb54329870a215254aec77ecf9))
+
 # [4.13.0](https://github.com/arnaud-dezandee/fast-eslint/compare/v4.12.0...v4.13.0) (2020-05-05)
 
 
