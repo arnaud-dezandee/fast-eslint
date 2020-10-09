@@ -1,3 +1,10 @@
+# [4.15.0](https://github.com/arnaud-dezandee/fast-eslint/compare/v4.14.0...v4.15.0) (2020-10-09)
+
+
+### Features
+
+* **package:** upgrade npm dependencies ([8734fca](https://github.com/arnaud-dezandee/fast-eslint/commit/8734fca35c07e1a8c78876d615e06ecceebe624a))
+
 # [4.14.0](https://github.com/arnaud-dezandee/fast-eslint/compare/v4.13.0...v4.14.0) (2020-07-08)
 
 
